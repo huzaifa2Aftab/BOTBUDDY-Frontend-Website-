@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotBuddy | AI Automation & Data Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Particles.js -->
+</head>
+<body>
+  <!-- Animated SVG Background -->
+  <div class="hero-animated-bg">
+    <svg width="100%" height="340" viewBox="0 0 1440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-bg-svg">
+      <defs>
+        <linearGradient id="waveGrad" x1="0" y1="0" x2="1440" y2="340" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#1DE9B6"/>
+          <stop offset="1" stop-color="#ff61a6"/>
+        </linearGradient>
+      </defs>
+      <path id="wave1" d="M0,220 Q360,320 720,220 T1440,220 V340 H0 Z" fill="url(#waveGrad)" opacity="0.18">
+        <animate attributeName="d" dur="7s" repeatCount="indefinite"
+          values="M0,220 Q360,320 720,220 T1440,220 V340 H0 Z;
+                  M0,220 Q360,180 720,260 T1440,220 V340 H0 Z;
+                  M0,220 Q360,320 720,220 T1440,220 V340 H0 Z"/>
+      </path>
+      <circle id="float1" cx="220" cy="80" r="32" fill="#1DE9B6" opacity="0.13">
+        <animate attributeName="cy" values="80;120;80" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <rect id="float2" x="1200" y="60" width="48" height="48" rx="18" fill="#ff61a6" opacity="0.10">
+        <animate attributeName="y" values="60;100;60" dur="8s" repeatCount="indefinite"/>
+      </rect>
+    </svg>
+  </div>
+  <!-- Floating BotBuddy Logo with Animation -->
+  <div class="botbuddy-logo-floating">
+    <div class="botbuddy-logo-bgshape"></div>
+    <div class="botbuddy-logo-outer">
+      <div class="botbuddy-logo-pulse"></div>
+      <!-- New Dynamic Logo SVG -->
+      <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bb-face" x1="0" y1="0" x2="130" y2="130" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1DE9B6"/>
+            <stop offset="1" stop-color="#ff61a6"/>
+          </linearGradient>
+          <radialGradient id="bb-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#1DE9B6" stop-opacity="0.1"/>
+          </radialGradient>
+        </defs>
+        <!-- Angular Robot Face -->
+        <rect x="20" y="30" width="90" height="60" rx="18" fill="url(#bb-face)" stroke="#fff" stroke-width="4"/>
+        <!-- Eyes (animated blink) -->
+        <ellipse id="eyeL" cx="48" cy="60" rx="7" ry="10" fill="#181848">
+          <animate attributeName="ry" values="10;3;10" keyTimes="0;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse id="eyeR" cx="82" cy="60" rx="7" ry="10" fill="#181848">
+          <animate attributeName="ry" values="10;3;10" keyTimes="0;0.5;1" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+        </ellipse>
+        <!-- BB Monogram as mouth/visor -->
+        <rect x="54" y="80" width="22" height="10" rx="4" fill="#fff" fill-opacity="0.18"/>
+        <text x="65" y="88" text-anchor="middle" fill="#fff" font-size="11" font-family="Segoe UI, Arial, sans-serif" font-weight="bold" letter-spacing="2">BB</text>
+        <!-- Antenna (animated) -->
+        <rect x="62" y="14" width="6" height="18" rx="3" fill="#fff">
+          <animate attributeName="y" values="14;8;14" keyTimes="0;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <circle cx="65" cy="12" r="5" fill="#ff61a6" stroke="#fff" stroke-width="2">
+          <animate attributeName="r" values="5;8;5" keyTimes="0;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Neon Glow -->
+        <ellipse cx="65" cy="60" rx="44" ry="28" fill="url(#bb-glow)"/>
+      </svg>
+    </div>
+    <div class="botbuddy-logo-sub animate-fadein">BotBuddy</div>
+  </div>
+  <!-- End Floating Logo -->
+  <section class="hero-section animate-fadein">
+    <div class="hero-bg-shapes">
+      <svg width="100%" height="220" viewBox="0 0 1440 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,160 C480,240 960,80 1440,160 L1440,0 L0,0 Z" fill="#1DE9B6" fill-opacity="0.18"/>
+        <circle cx="1200" cy="60" r="60" fill="#ff61a6" fill-opacity="0.13"/>
+        <circle cx="200" cy="100" r="40" fill="#1DE9B6" fill-opacity="0.13"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <!-- Remove inline logo here -->
+      <h1 class="hero-title animate-slideup">BotBuddy</h1>
+      <p class="hero-tagline animate-fadein">AI Automation & Data Solutions for the Modern World</p>
+      <a href="#contact" class="cta-btn animate-pop">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main>
+    <section class="summary-section">
+      <h2>Welcome to BotBuddy</h2>
+      <p>BotBuddy is your trusted partner for AI automation, chatbot development, data handling, web scraping, machine learning, and more.<br><br>
+      Our mission is to empower businesses and individuals with intelligent, automated, and data-driven solutions for the digital age.<br><br>
+      Why choose us? We combine deep technical expertise with a passion for innovation, delivering tailored solutions that save you time, reduce costs, and unlock new opportunities. Whether you need a smart chatbot, robust data pipeline, or advanced machine learning model, our team is ready to help you succeed.<br><br>
+      <b>Let BotBuddy automate your future!</b></p>
+    </section>
+
+    <!-- Services Slider -->
+    <section class="services-section">
+      <h2>Our Services</h2>
+      <div class="swiper services-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service-icon">🤖</div>
+            <div class="service-title">AI Automation</div>
+            <div class="service-desc">Automate repetitive tasks, streamline workflows, and boost productivity with intelligent AI systems tailored to your business.</div>
+            <a href="ai-automation.html" class="learn-btn-small">Learn More</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-icon">🤖💬</div>
+            <div class="service-title">AI Chatbots</div>
+            <div class="service-desc">Experience next-gen conversational AI powered by transformers and LLMs. Deliver natural, context-aware, and intelligent conversations for support, sales, and more—24/7.</div>
+            <a href="custom-chatbots.html" class="learn-btn-small">Learn More</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-icon">🗄️</div>
+            <div class="service-title">Data Handling & ETL</div>
+            <div class="service-desc">Transform, clean, and integrate your data for powerful analytics and smarter business decisions.</div>
+            <a href="data-handling-etl.html" class="learn-btn-small">Learn More</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-icon">🕸️</div>
+            <div class="service-title">Web Scraping</div>
+            <div class="service-desc">Extract valuable data from the web—competitor prices, market trends, leads, and more—automatically and reliably.</div>
+            <a href="web-scraping.html" class="learn-btn-small">Learn More</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-icon">🔬</div>
+            <div class="service-title">Machine Learning Solutions</div>
+            <div class="service-desc">Predict trends, automate decisions, and personalize experiences with custom machine learning models.</div>
+            <a href="machine-learning.html" class="learn-btn-small">Learn More</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-icon">📊</div>
+            <div class="service-title">Data Visualization</div>
+            <div class="service-desc">Turn complex data into clear, interactive dashboards and reports for better insights and communication.</div>
+            <a href="data-visualization.html" class="learn-btn-small">Learn More</a>
+          </div>
+        </div>
+        <!-- Remove Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Keep Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- End Services Slider -->
+
+    <!-- Animated Gradient Overlay for Services Section -->
+    <div class="services-animated-bg"></div>
+    <!-- Confetti Container for Services -->
+    <div id="services-confetti"></div>
+    <!-- SVG Sparkles for Active Card -->
+    <svg class="services-sparkles" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <circle cx="60" cy="20" r="3" fill="#fff" opacity="0.7">
+          <animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="100" cy="60" r="2" fill="#1DE9B6" opacity="0.7">
+          <animate attributeName="r" values="2;5;2" dur="1.7s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="30" cy="90" r="2.5" fill="#ff61a6" opacity="0.7">
+          <animate attributeName="r" values="2.5;5;2.5" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <rect x="80" y="30" width="2" height="8" rx="1" fill="#fff" opacity="0.5">
+          <animate attributeName="height" values="8;16;8" dur="2.1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </svg>
+
+    <section class="owner-contact glass-card" id="contact">
+      <h3><i class="fa-solid fa-envelope"></i> Email us directly:</h3>
+      <form class="contact-form animate-fadein" id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+        <div class="form-success" id="form-success">Thank you! We'll get back to you soon.</div>
+      </form>
+      <div class="email-block">
+        <a href="mailto:huzaifaaftab613@gmail.com" class="email-link">huzaifaaftab613@gmail.com</a>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('huzaifaaftab613@gmail.com');this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1200);">Copy</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="footer glass-card animate-fadein">
+    <div class="footer-content">
+      <span class="footer-logo">BB</span>
+      <span class="footer-text">&copy; 2024 BotBuddy. All rights reserved.</span>
+      <span class="footer-socials">
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // GSAP Animations
+    gsap.from('.hero-title', {y: 60, opacity: 0, duration: 1, ease: 'power3.out'});
+    gsap.from('.hero-tagline', {y: 40, opacity: 0, duration: 1, delay: 0.3, ease: 'power3.out'});
+    gsap.from('.cta-btn', {scale: 0.7, opacity: 0, duration: 0.7, delay: 0.7, ease: 'back.out(1.7)'});
+    gsap.utils.toArray('.glass-card, .services-section, .summary-section').forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        y: 60, opacity: 0, duration: 0.9, delay: i * 0.1, ease: 'power3.out'
+      });
+    });
+    // Swiper 3D Coverflow with enhancements (keep as before)
+    const swiper = new Swiper('.services-swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      initialSlide: 2,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 320,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        600: { slidesPerView: 1.2 },
+        900: { slidesPerView: 2 },
+      },
+      on: {
+        slideChangeTransitionStart: function() {
+          document.querySelectorAll('.swiper-slide').forEach(slide => {
+            slide.style.opacity = '0.5';
+            slide.style.transition = 'opacity 0.6s cubic-bezier(0.4,0.2,0.2,1)';
+            slide.style.boxShadow = '';
+          });
+          const active = document.querySelector('.swiper-slide-active');
+          if (active) {
+            active.style.opacity = '1';
+            active.style.boxShadow = '0 0 40px 0 #1DE9B6, 0 0 24px 0 #ff61a6';
+          }
+        },
+        slideChangeTransitionEnd: function() {
+          const active = document.querySelector('.swiper-slide-active');
+          if (active) {
+            active.style.opacity = '1';
+            active.style.boxShadow = '0 0 40px 0 #1DE9B6, 0 0 24px 0 #ff61a6';
+          }
+        },
+        init: function() {
+          setTimeout(() => {
+            const active = document.querySelector('.swiper-slide-active');
+            if (active) {
+              active.style.opacity = '1';
+              active.style.boxShadow = '0 0 40px 0 #1DE9B6, 0 0 24px 0 #ff61a6';
+            }
+          }, 100);
+        }
+      }
+    });
+    // Contact form validation
+    document.getElementById('contact-form').onsubmit = function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+      }
+      // Simulate success
+      form.reset();
+      document.getElementById('form-success').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('form-success').style.display = 'none';
+      }, 3000);
+    };
+  </script>
+</body>
+</html> 
